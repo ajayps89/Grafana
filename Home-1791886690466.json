@@ -1,0 +1,609 @@
+{
+  "apiVersion": "dashboard.grafana.app/v2",
+  "kind": "Dashboard",
+  "metadata": {
+    "name": "c72bf47a-e2a9-4eef-84ee-341b35fd1994",
+    "namespace": "default",
+    "uid": "ecbc97d2-f20e-4555-a43c-c992b0e7b7ad",
+    "resourceVersion": "1790406400520002",
+    "generation": 5,
+    "creationTimestamp": "2026-08-20T10:37:23Z",
+    "labels": {
+      "grafana.app/deprecatedInternalID": "717487745282048"
+    },
+    "annotations": {
+      "grafana.app/createdBy": "user:cehkqwcyg54w0f",
+      "grafana.app/saved-from-ui": "Grafana v13.2.0 (f681b1359f)",
+      "grafana.app/updatedBy": "user:cehkqwcyg54w0f",
+      "grafana.app/updatedTimestamp": "2026-09-26T07:06:40Z"
+    }
+  },
+  "spec": {
+    "annotations": [
+      {
+        "kind": "AnnotationQuery",
+        "spec": {
+          "query": {
+            "kind": "DataQuery",
+            "group": "grafana",
+            "version": "v0",
+            "datasource": {
+              "name": "-- Grafana --"
+            },
+            "spec": {}
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "builtIn": true
+        }
+      }
+    ],
+    "cursorSync": "Off",
+    "editable": true,
+    "elements": {
+      "panel-1": {
+        "kind": "Panel",
+        "spec": {
+          "id": 1,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "",
+                      "version": "v0",
+                      "spec": {}
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "canvas",
+            "version": "13.2.0",
+            "spec": {
+              "options": {
+                "infinitePan": false,
+                "inlineEditing": true,
+                "panZoom": false,
+                "root": {
+                  "background": {
+                    "color": {
+                      "fixed": "#8AB8FF"
+                    },
+                    "image": {
+                      "field": "",
+                      "fixed": "",
+                      "mode": "field"
+                    }
+                  },
+                  "border": {
+                    "color": {
+                      "fixed": "dark-green"
+                    }
+                  },
+                  "constraint": {
+                    "horizontal": "left",
+                    "vertical": "top"
+                  },
+                  "elements": [
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "transparent"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "fill": {
+                          "fixed": "transparent"
+                        },
+                        "path": {
+                          "fixed": "img/icons/iot/hul_logo.svg",
+                          "mode": "fixed"
+                        }
+                      },
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Logo",
+                      "placement": {
+                        "height": 612,
+                        "left": 366,
+                        "top": 219,
+                        "width": 1295
+                      },
+                      "type": "icon"
+                    },
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "transparent"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "rpm": {
+                          "fixed": 30
+                        }
+                      },
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Element 3",
+                      "placement": {
+                        "height": 700.9666748046875,
+                        "left": 14,
+                        "top": 194,
+                        "width": 357.9666748046875
+                      },
+                      "type": "windTurbine"
+                    },
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "transparent"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "rpm": {
+                          "fixed": 30
+                        }
+                      },
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Element 4",
+                      "placement": {
+                        "height": 421.9666748046875,
+                        "left": 414,
+                        "top": 300,
+                        "width": 259.933349609375
+                      },
+                      "type": "windTurbine"
+                    },
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "transparent"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "rpm": {
+                          "fixed": 30
+                        }
+                      },
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Element 5",
+                      "placement": {
+                        "height": 562.9666748046875,
+                        "left": 706,
+                        "top": 201,
+                        "width": 356.95001220703125
+                      },
+                      "type": "windTurbine"
+                    },
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "transparent"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "rpm": {
+                          "fixed": 30
+                        }
+                      },
+                      "connections": [],
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Element 6",
+                      "placement": {
+                        "height": 421.95001220703125,
+                        "left": 1095,
+                        "top": 300,
+                        "width": 259.91668701171875
+                      },
+                      "type": "windTurbine"
+                    },
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "transparent"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "rpm": {
+                          "fixed": 30
+                        }
+                      },
+                      "connections": [],
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Element 7",
+                      "placement": {
+                        "height": 570,
+                        "left": 1413,
+                        "top": 197,
+                        "width": 353.9757080078125
+                      },
+                      "type": "windTurbine"
+                    },
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "transparent"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "rpm": {
+                          "fixed": 30
+                        }
+                      },
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Element 8",
+                      "placement": {
+                        "height": 421.9618225097656,
+                        "left": 1802,
+                        "top": 300,
+                        "width": 260
+                      },
+                      "type": "windTurbine"
+                    },
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "transparent"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "align": "center",
+                        "color": {
+                          "fixed": "#1766a6"
+                        },
+                        "size": 90,
+                        "text": {
+                          "fixed": "HUL AI Enabled Utility Control Tower"
+                        },
+                        "valign": "middle"
+                      },
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Element 9",
+                      "placement": {
+                        "height": 221.9499969482422,
+                        "left": -89,
+                        "top": 4,
+                        "width": 1879
+                      },
+                      "type": "text"
+                    }
+                  ],
+                  "name": "Element 1697628867420",
+                  "oneClickMode": "off",
+                  "placement": {
+                    "height": 100,
+                    "left": 0,
+                    "rotation": 0,
+                    "top": 0,
+                    "width": 100
+                  },
+                  "type": "frame"
+                },
+                "showAdvancedTypes": true,
+                "tooltip": {
+                  "disableForOneClick": false,
+                  "mode": "single"
+                },
+                "zoomToContent": false
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "green"
+                      },
+                      {
+                        "value": 80,
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "thresholds"
+                  }
+                },
+                "overrides": []
+              }
+            }
+          }
+        }
+      },
+      "panel-5": {
+        "kind": "Panel",
+        "spec": {
+          "id": 5,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [],
+              "transformations": [],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "text",
+            "version": "13.2.0",
+            "spec": {
+              "options": {
+                "code": {
+                  "language": "plaintext",
+                  "showLineNumbers": false,
+                  "showMiniMap": false
+                },
+                "content": "<div style=\"text-align: center;\">\n  <!-- <a href=\"http://172.27.0.22:1880/ui/#!/0?socketid=IifTkvfIZWLSxBaxAAAz\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">&#128197;</span> Live Meter\n    </button>\n  </a>\n\n  <a href=\"http://172.27.0.22:3000/d/b5a2d47b-da42-4433-a808-2bb3ad7e6914/solar-daily-kwh?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">&#x26A1;</span> Solar Daily\n    </button>\n  </a> -->\n\n <a href=\"http://localhost:3000/d/plant-wise-daily-cls2-mcc/plant-wise-daily-cls-2-old-mcc?orgId=1&from=now-7d&to=now&timezone=utc\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">&#x1F50C;</span> Plant Wise Energy\n    </button>\n  </a>\n\n <a href=\"http://localhost:3000/d/meter-wise-daily-cls2-mcc/meter-wise-daily-cls-2-old-mcc?orgId=1&from=now-30d&to=now&timezone=browser\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">&#x1F4DF;</span> Meter Wise Daily\n    </button>\n  </a>\n <!-- <a href=\"http://172.27.0.22:3000/d/d4f74680-ebc6-493b-8570-31d2979a6157/live-daily?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">📡</span> Live KW Usage\n    </button>\n  </a> -->\n\n <!-- <a href=\"http://172.27.0.22:1880/ui/#!/12?socketid=IifTkvfIZWLSxBaxAAAz\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">&#x1F50B;</span> Download Report\n    </button>\n  </a> -->\n\n <!-- <a href=\"http://172.27.0.22:3000/d/dcb60a0c-857b-400a-a916-051a3ee6127e/compressor?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">&#x1F4A8;</span> Air Compressor\n    </button>\n  </a>\n\n   <a href=\"http://172.27.0.22:3000/d/b4ee338a-2993-4a20-89f8-2d92eae152d4/chiller?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">❄</span> Chiller\n    </button>\n  </a> -->\n\n   <!-- <a href=\"http://172.27.0.22:3000/d/bdd7228c-6d71-4263-8c47-5ac8d88e62e9/diesel-generator?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">⛽</span> Diesel Generator\n    </button>\n  </a> -->\n     \n  <!-- <a href=\"http://172.27.0.22:3000/d/a71e9bf8-af16-4bb1-a28b-3dee9ebad659/plant-wise-daily-main-air?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">&#x1F4A8;</span> Air Flow\n    </button>\n  </a> -->\n\n  <!-- </a>\n     <a href=\"http://172.27.0.22:3000/d/d216adf3-4448-4022-9c16-e2694bd197af/plant-wise-daily-main-steam?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">༄</span> Steam Flow\n    </button>\n  </a> -->\n\n  <!-- </a>\n     <a href=\"http://172.27.0.22:3000/d/bce8ee0e-9f96-40ad-966e-a6796078d36d/plant-wise-daily-cept-water?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">🌊</span> CETP Water\n    </button>\n  </a> -->\n\n  </a>\n    <!--<a href=\"http://172.27.0.22:1880/ui/#!/15?socketid=C9L-cwTZHTgtkbgUAABH\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">🧑🏻‍💻</span> Data Entry\n    </button>\n  </a> -->\n\n  <!-- </a>\n     <a href=\"http://172.27.0.22:3000/d/b3ef6178-2e36-4046-8d67-a29be8cd4467/manual-data-graphs-boiler?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">🔥</span> Boiler Trends\n    </button>\n  </a> -->\n\n  <!-- </a>\n     <a href=\"http://172.27.0.22:3000/d/bb277fc5-d8a4-40f0-8fa2-0913eb207b46/manual-data-water-site-level?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">🌊</span> Plant Wise Water\n    </button>\n  </a> -->\n\n  <!-- </a>\n     <a href=\"http://172.27.0.22:3000/d/d045f187-f571-4045-a39a-460d40623294/ems-status?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">✅</span>  EMS STATUS\n    </button>\n  </a> -->\n\n    <!-- </a>\n     <a href=\"http://172.27.0.22:1880/ui/#!/17?socketid=fy5tVWV9mcmR6ujeAAAX\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">📈</span> Data Compare\n    </button>\n  </a> -->\n\n      <!-- </a>\n     <a href=\"http://172.27.0.22:1880/ui/#!/19?socketid=x431oEdskL36mg7mAAAh\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">🚨</span> Alert Page\n    </button>\n  </a> -->\n\n  <!-- </a>\n    <a href=\"https://dashboard.sensomak.com/d/e42b03b4-936e-4fda-8f04-2fe5dba9ea46gg/zero-carbon-heating-system?orgId=89&from=now-12h&to=now\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">♨️</span> Heat Pump\n    </button>\n  </a> -->\n\n  <!-- </a>\n    <a href=\"http://172.27.0.22:8501/\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">🧞</span> Insight-Genie\n    </button>\n  </a> -->\n\n  <!-- </a>\n    <a href=\"http://172.27.0.22:3000/d/bdxg6uaagn7y8a/maglev-cop?orgId=1\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">🏭</span> Chiller COP\n    </button>\n  </a> -->\n\n  <!-- </a>\n    <a href=\"http://172.27.0.22:3001/\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">⚡︎</span> Power Loss Page\n    </button>\n  </a> -->\n\n  <!-- </a>\n    <a href=\"http://172.27.0.22:3000/d/fdxk401r3fjlse/ems-master-page?orgId=1&from=1726038181370&to=1726041781370\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">📲</span> Dashboard Page 1\n    </button>\n  </a> -->\n\n\n<!-- </a>\n    <a href=\"http://172.27.0.22:3000/d/ae21au0gy0934c/benchmark-page?orgId=1&from=1726038181370&to=1726041781370\">\n    <button class=\"custom-button\">\n      <span class=\"icon\">📲</span>Dashboard Page 2\n    </button>\n  </a> -->\n\n</div>\n\n<style>\n  .custom-button {\n    background-color: #8AB8FF;\n    color: #FFFFFF;\n    padding: 10px 20px;\n    border: none;\n    cursor: pointer;\n    box-shadow: 3px 3px 5px #888888;\n    border-radius: 10px;\n    transition: background-color 0.3s, transform 0.3s;\n    margin: 10px;\n    width: 200px;\n    height: 70px;\n  }\n\n  .custom-button .icon {\n    font-size: 18px;\n    margin-right: 8px;\n  }\n\n  .custom-button:hover {\n    background-color: #45a9f9;\n    transform: scale(1.05);\n  }\n</style>",
+                "mode": "html"
+              },
+              "fieldConfig": {
+                "defaults": {},
+                "overrides": []
+              }
+            }
+          },
+          "transparent": true
+        }
+      },
+      "panel-6": {
+        "kind": "Panel",
+        "spec": {
+          "id": 6,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "redis-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "redis-datasource"
+                      },
+                      "spec": {
+                        "command": "get",
+                        "keyName": "emsPLCStatus99",
+                        "query": "",
+                        "streaming": true,
+                        "streamingCapacity": 1000,
+                        "streamingDataType": "DataFrame",
+                        "streamingInterval": 1000,
+                        "type": "command"
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [],
+              "queryOptions": {
+                "interval": "1s"
+              }
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "stat",
+            "version": "13.2.0",
+            "spec": {
+              "options": {
+                "colorMode": "background",
+                "graphMode": "area",
+                "justifyMode": "auto",
+                "orientation": "auto",
+                "percentChangeColorMode": "standard",
+                "reduceOptions": {
+                  "calcs": [
+                    "lastNotNull"
+                  ],
+                  "fields": "/.*/",
+                  "values": false
+                },
+                "showPercentChange": false,
+                "textMode": "value_and_name",
+                "wideLayout": true
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "displayName": "EMS PLC Status (141.141.143.99)",
+                  "mappings": [
+                    {
+                      "type": "value",
+                      "options": {
+                        "0": {
+                          "text": "Off",
+                          "color": "red",
+                          "index": 0
+                        },
+                        "1": {
+                          "text": "On",
+                          "color": "green",
+                          "index": 1
+                        }
+                      }
+                    }
+                  ],
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "blue"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "thresholds"
+                  }
+                },
+                "overrides": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "layout": {
+      "kind": "GridLayout",
+      "spec": {
+        "items": [
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "x": 0,
+              "y": 0,
+              "width": 24,
+              "height": 18,
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-1"
+              }
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "x": 0,
+              "y": 18,
+              "width": 24,
+              "height": 3,
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-5"
+              }
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "x": 0,
+              "y": 21,
+              "width": 24,
+              "height": 4,
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-6"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "links": [],
+    "liveNow": false,
+    "preload": false,
+    "tags": [],
+    "timeSettings": {
+      "timezone": "browser",
+      "from": "2023-10-19T00:50:24.547Z",
+      "to": "2023-10-19T06:50:24.547Z",
+      "autoRefresh": "",
+      "autoRefreshIntervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ],
+      "hideTimepicker": false,
+      "fiscalYearStartMonth": 0
+    },
+    "title": "Home",
+    "variables": []
+  }
+}
