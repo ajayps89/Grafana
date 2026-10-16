@@ -1,0 +1,2365 @@
+{
+  "apiVersion": "dashboard.grafana.app/v2",
+  "kind": "Dashboard",
+  "metadata": {
+    "name": "dag1943scjqhvkf"
+  },
+  "spec": {
+    "annotations": [
+      {
+        "kind": "AnnotationQuery",
+        "spec": {
+          "builtIn": true,
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations \u0026 Alerts",
+          "query": {
+            "datasource": {
+              "name": "-- Grafana --"
+            },
+            "group": "grafana",
+            "kind": "DataQuery",
+            "spec": {},
+            "version": "v0"
+          }
+        }
+      }
+    ],
+    "cursorSync": "Off",
+    "description": "",
+    "editable": true,
+    "elements": {
+      "panel-1": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 1,
+          "links": [],
+          "title": "",
+          "vizConfig": {
+            "group": "text",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {},
+                "overrides": []
+              },
+              "options": {
+                "code": {
+                  "language": "plaintext",
+                  "showLineNumbers": false,
+                  "showMiniMap": false
+                },
+                "content": "\u003c!-- \u003cdiv style=\"text-align: center;\"\u003e\n  \u003ca href=\"http://localhost:3000/d/meter-wise-daily-cls2-mcc/meter-wise-daily-cls-2-old-mcc?orgId=1\u0026from=now-30d\u0026to=now\u0026timezone=browser\"\u003e\n    \u003cbutton class=\"custom-button\" style=\"background-color: #8AB8FF; color: white; font-weight: bold; border: 1.5px solid #fff;\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e OLD MCC \n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://localhost:3000/d/meter-wise-daily-cls2-ahu/meter-wise-daily-cls-2-ahu?orgId=1\u0026from=now-30d\u0026to=now\u0026timezone=browser\"\u003e\n    \u003cbutton class=\"custom-button\" style=\"background-color: #8AB8FF; color: white; font-weight: bold; border: 1.5px solid #fff;\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e AHU \n    \u003c/button\u003e\n  \u003c/a\u003e\n\n  \u003chr style=\"border: 0.5px solid #555; margin: 10px 0;\"\u003e\n\n  \u003ca href=\"http://172.27.0.22:3000/d/c72bf47a-e2a9-4eef-84ee-341b35fd1994/home?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#127968;\u003c/span\u003e Home\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/meter-wise-daily-cls2-mcc/meter-wise-daily-cls-2-old-mcc?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#128197;\u003c/span\u003e CLS 2\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/b9b07965-c63d-46f7-9c52-e6e98480db41/meter-wise-daily-cls-1?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x26A1;\u003c/span\u003e CLS 1\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/da34cc9b-9c1d-42d5-83a6-fc794f9156b4/meter-wise-daily-alpla?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F50C;\u003c/span\u003e ALPLA\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/a1bd5262-3736-4ccb-a863-06fff268bee1/meter-wise-daily-color?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4A1;\u003c/span\u003e COLOR\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/f8bb27c4-e7be-40e0-a48f-c8b4e4f055fd/meter-wise-daily-cu?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F50B;\u003c/span\u003e CU\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/bb62be73-c5e4-4fcd-be95-40232dea3228/meter-wise-daily-nail?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4DF;\u003c/span\u003e NAIL\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/fc48d34b-5e74-4975-b7ab-5b3c82a97895/meter-wise-daily-nmb?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e NMB\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/d52627c0-91e1-4eb7-93f5-9ec173468845/meter-wise-daily-pw?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e PW\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/a5daafa6-6f1b-4099-91ad-c5b65ef21929/meter-wise-daily-solar?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e SOLAR\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/e4bfaf95-b452-494a-81c7-fc671441941d/meter-wise-daily-tp?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e TP\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/a9a5df4f-333f-4d20-8db8-6a9c4143fc6f/meter-wise-daily-vcb-incomer?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e VCB INCOMER\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/ac87b367-0c09-424c-b5e1-96aa141ad9cb/meter-wise-daily-air?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e AIR\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/ea58974f-a877-4440-8324-58cc81d51ed1/meter-wise-daily-steam?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e STEAM\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://172.27.0.22:3000/d/b57bdf0a-174f-4c17-b036-bddbd426cc9e/meter-wise-daily-water?orgId=1\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e WATER\n    \u003c/button\u003e\n  \u003c/a\u003e\n\u003c/div\u003e\n\n\u003cstyle\u003e\n  .custom-button {\n    background-color: #8AB8FF;\n    color: #FFFFFF;\n    padding: 10px 20px;\n    border: none;\n    cursor: pointer;\n    box-shadow: 3px 3px 5px #888888;\n    border-radius: 10px;\n    transition: background-color 0.3s, transform 0.3s;\n    margin: 10px;\n    width: 180px;\n  }\n  .custom-button .icon {\n    font-size: 18px;\n    margin-right: 8px;\n  }\n  .custom-button:hover {\n    background-color: #45a9f9;\n    transform: scale(1.05);\n  }\n\u003c/style\u003e --\u003e\n\n\u003cdiv style=\"text-align: center;\"\u003e\n  \u003ca href=\"http://localhost:3000/d/c72bf47a-e2a9-4eef-84ee-341b35fd1994/home?orgId=1\u0026from=2023-10-19T00:50:24.547Z\u0026to=2023-10-19T06:50:24.547Z\u0026timezone=browser\"\u003e\n    \u003cbutton class=\"custom-button\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#127968;\u003c/span\u003e HOME\n    \u003c/button\u003e\n  \u003c/a\u003e\n  \u003ca href=\"http://localhost:3000/d/meter-wise-daily-cls2-mcc/meter-wise-daily-cls-old-mcc?orgId=1\u0026from=now-30d\u0026to=now\u0026timezone=browser\"\u003e\n    \u003cbutton class=\"custom-button\" style=\"background-color: #8AB8FF; color: white; font-weight: bold; border: 1.5px solid #fff;\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e OLD MCC DATA\n    \u003c/button\u003e\n  \u003c/a\u003e\n\n  \u003ca href=\"http://localhost:3000/d/meter-wise-daily-cls2-ahu/meter-wise-daily-cls-2-ahu?orgId=1\u0026from=now-30d\u0026to=now\u0026timezone=browser\"\u003e\n    \u003cbutton class=\"custom-button\" style=\"background-color: #8AB8FF; color: white; font-weight: bold; border: 1.5px solid #fff;\"\u003e\n      \u003cspan class=\"icon\"\u003e\u0026#x1F4CA;\u003c/span\u003e AHU DATA\n    \u003c/button\u003e\n  \u003c/a\u003e\n\u003c/div\u003e\n\n\u003cstyle\u003e\n  .custom-button {\n    background-color: #8AB8FF;\n    color: #FFFFFF;\n    padding: 10px 20px;\n    border: none;\n    cursor: pointer;\n    box-shadow: 3px 3px 5px #888888;\n    border-radius: 10px;\n    transition: background-color 0.3s, transform 0.3s;\n    margin: 10px;\n    width: 190px;\n  }\n\n  .custom-button .icon {\n    font-size: 18px;\n    margin-right: 8px;\n  }\n\n  .custom-button:hover {\n    background-color: #45a9f9;\n    transform: scale(1.05);\n  }\n\u003c/style\u003e",
+                "mode": "html"
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-10": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"VOL PACK CHILLER\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('4F3-32A|VOLPACKCHILLER')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "timeFrom": "30d"
+              },
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 10,
+          "links": [],
+          "title": "VOL PACK CHILLER",
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
+                "overrides": []
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-12": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "time_series",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"VOL PACK\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('2F3-63A|VOLPACK')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "time_series",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"AUTO PACK\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('3F6-32A|AUTOPACK')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "B"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "timeFrom": "30d"
+              },
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 12,
+          "links": [],
+          "title": "VOL PACK AND AUTO PACK",
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
+                "overrides": []
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-13": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"BEEM WEAR HOUSE CHARGING POINT\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('2F2-160A|BEEMWEARHOUSECHARGINGPOINT')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "timeFrom": "30d"
+              },
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 13,
+          "links": [],
+          "title": "BEEM WEAR HOUSE CHARGING POINT",
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
+                "overrides": []
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-14": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"VIM VOL PACK CASH PACKER\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('2F2-63A|VIMVOLPACKCASHPACKER')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "timeFrom": "30d"
+              },
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 14,
+          "links": [],
+          "title": "VIM VOL PACK CASH PACKER",
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
+                "overrides": []
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-15": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on,\n  meter_name,\n  kwh AS \"BOTTEL LINE3 LEBLING MACHIN\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('4R3-32A|BOTTELLINE3LEBLINGMACHINE')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "timeFrom": "30d"
+              },
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 15,
+          "links": [],
+          "title": "BOTTEL LINE3 LEBLING MACHINE",
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
+                "overrides": []
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-16": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"VOL PACK CLD FORMMING MACHINE\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('2F7-32|VOLPACKCLDFORMMINGMACHINE')\nORDER BY\n  created_on;\n",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "timeFrom": "30d"
+              },
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 16,
+          "links": [],
+          "title": "VOL PACK CLD FORMMING MACHINE",
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
+                "overrides": []
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-5": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"ROBOT DELTA UPS\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('2F1-100A|ROBOTDELTAUPS')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "B"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"110 VUPS\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('3F2-160A|110VUPS')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "hideTimeOverride": false,
+                "timeFrom": "30d"
+              },
+              "transformations": [
+                {
+                  "group": "renameByRegex",
+                  "kind": "Transformation",
+                  "spec": {
+                    "options": {
+                      "regex": "^",
+                      "renamePattern": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 5,
+          "links": [],
+          "title": "Group 3",
+          "transparent": true,
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "smooth",
+                    "lineStyle": {
+                      "fill": "solid"
+                    },
+                    "lineWidth": 2,
+                    "pointSize": 7,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "unit": "kwatth"
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "AIR COMPRESSOR -3"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true,
+                  "width": 0
+                },
+                "timezone": [
+                  "browser"
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-6": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"MIXER08 VACUMELIFTER\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('2F2-32A|MIXER08VACUMELIFTER')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"MIXER-08 HOMONIGER PUMP\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('5F1-12A|MIXER-08HOMONIGERPUMP')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "B"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"YSTRAL MIXER08\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('5F4-50A|YSTRALMIXER08')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "C"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "timeFrom": "30d"
+              },
+              "transformations": [
+                {
+                  "group": "renameByRegex",
+                  "kind": "Transformation",
+                  "spec": {
+                    "options": {
+                      "regex": "",
+                      "renamePattern": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 6,
+          "links": [],
+          "title": "Group 2",
+          "transparent": true,
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "smooth",
+                    "lineStyle": {
+                      "fill": "solid"
+                    },
+                    "lineWidth": 2,
+                    "pointSize": 7,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "unit": "kwatth"
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "AIR COMPRESSOR -3"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true,
+                  "width": 0
+                },
+                "timezone": [
+                  "browser"
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-7": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"FLAX LINK CONVEYOR PANEL LOOP3\u00264\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('1F2-125A|FLAXLINKCONVEYORPANELLOOP3\u00264')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"BOTTLING LINE CONVEYOR\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('4F2-32A|BOTTLINGLINECONVEYOR')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "B"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"BOTTLING LINE03 CONVEYOR\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('4F4-32A|BOTTLINGLINE03CONVEYOR')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "C"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"FLEX LINK CONVEYOR PANEL LOOP1\u00262\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('3F1-200A|FLEXLINKCONVEYORPANELLOOP1\u00262')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "D"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"VOLPACK CONVEYOR\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('4F6-32A|VOLPACKCONVEYOR')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "E"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"VIMVOL PACK CASHPACKER CONVEYOR\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('2F3-32A|VIMVOLPACKCASHPACKERCONVEYOR')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "F"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"TJBY PASS CONVEYOR\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('3F2-63A|TJBYPASSCONVEYOR')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "G"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"LOOP6\u00267FLX LINK CONVEYOR PANEL\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('3F5-100A|LOOP6\u00267FLXLINKCONVEYORPANEL')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "H"
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "hul",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n  created_on as time,\n  meter_name,\n  kwh AS \"BLPOSIMATALPINE CONVEYOR\"\nFROM\n  hul.energy_usage\nWHERE\n  $__timeFilter(created_on)\n  AND meter_name IN ('4R2-32A|BLPOSIMATALPINECONVEYOR')\nORDER BY\n  created_on;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "I"
+                  }
+                }
+              ],
+              "queryOptions": {
+                "timeFrom": "30d"
+              },
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 7,
+          "links": [],
+          "title": "Group 1",
+          "transparent": true,
+          "vizConfig": {
+            "group": "timeseries",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "smooth",
+                    "lineStyle": {
+                      "fill": "solid"
+                    },
+                    "lineWidth": 2,
+                    "pointSize": 7,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "unit": "kwatth"
+                },
+                "overrides": []
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": true,
+                  "width": 0
+                },
+                "timezone": [
+                  "browser"
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-8": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT\n    meter_name AS MeterName,\n    SUM(kwh)/1000 AS \"Total Energy Usage (MWh)\"\nFROM\n    hul.energy_usage\nWHERE\n    $__timeFilter(created_on)\n    AND meter_name IN ('1F2-125A|FLAXLINKCONVEYORPANELLOOP3\u00264', '2F4-63A|BL-3,SHRINKTUNNALM/C', '3F2-160A|110VUPS', '2F2-160A|BEEMWEARHOUSECHARGINGPOINT', '2F1-100A|ROBOTDELTAUPS', '3F5-32A|POSIMATMCBL', '3F6-32A|AUTOPACK', '4F2-32A|BOTTLINGLINECONVEYOR', '4F4-32A|BOTTLINGLINE03CONVEYOR', '2F3-63A|VOLPACK', '2F7-32|VOLPACKCLDFORMMINGMACHINE', '3F1-200A|FLEXLINKCONVEYORPANELLOOP1\u00262', '2F2-32A|MIXER08VACUMELIFTER', '2F2-63A|VIMVOLPACKCASHPACKER', '2F3-32A|VIMVOLPACKCASHPACKERCONVEYOR', '3F2-63A|TJBYPASSCONVEYOR', '3F5-100A|LOOP6\u00267FLXLINKCONVEYORPANEL', '4F3-32A|BLCLDMAKINGM/C', '5F1-12A|MIXER-08HOMONIGERPUMP', '5F4-50A|YSTRALMIXER08', '4R2-32A|BLPOSIMATALPINECONVEYOR', '4R3-32A|BOTTELLINE3LEBLINGMACHINE', '2F1-63A', '2F2-63A', '2F3-63A')\nGROUP BY\n    meter_name\nORDER BY\n    CASE\n        WHEN meter_name = '1F2-125A|FLAXLINKCONVEYORPANELLOOP3\u00264' THEN 1\n        WHEN meter_name = '2F4-63A|BL-3,SHRINKTUNNALM/C' THEN 2\n        WHEN meter_name = '3F2-160A|110VUPS' THEN 3\n        WHEN meter_name = '2F2-160A|BEEMWEARHOUSECHARGINGPOINT' THEN 4\n        WHEN meter_name = '2F1-100A|ROBOTDELTAUPS' THEN 5\n        WHEN meter_name = '3F5-32A|POSIMATMCBL' THEN 6\n        WHEN meter_name = '3F6-32A|AUTOPACK' THEN 7\n        WHEN meter_name = '4F2-32A|BOTTLINGLINECONVEYOR' THEN 8\n        WHEN meter_name = '4F4-32A|BOTTLINGLINE03CONVEYOR' THEN 9\n        WHEN meter_name = '2F3-63A|VOLPACK' THEN 10\n        WHEN meter_name = '2F7-32|VOLPACKCLDFORMMINGMACHINE' THEN 11\n        WHEN meter_name = '3F1-200A|FLEXLINKCONVEYORPANELLOOP1\u00262' THEN 12\n        WHEN meter_name = '2F2-32A|MIXER08VACUMELIFTER' THEN 13\n        WHEN meter_name = '2F2-63A|VIMVOLPACKCASHPACKER' THEN 14\n        WHEN meter_name = '2F3-32A|VIMVOLPACKCASHPACKERCONVEYOR' THEN 15\n        WHEN meter_name = '3F2-63A|TJBYPASSCONVEYOR' THEN 16\n        WHEN meter_name = '3F5-100A|LOOP6\u00267FLXLINKCONVEYORPANEL' THEN 17\n        WHEN meter_name = '4F3-32A|BLCLDMAKINGM/C' THEN 18\n        WHEN meter_name = '5F1-12A|MIXER-08HOMONIGERPUMP' THEN 19\n        WHEN meter_name = '5F4-50A|YSTRALMIXER08' THEN 20\n        WHEN meter_name = '4R2-32A|BLPOSIMATALPINECONVEYOR' THEN 21\n        WHEN meter_name = '4R3-32A|BOTTELLINE3LEBLINGMACHINE' THEN 22\n        WHEN meter_name = '2F1-63A' THEN 23\n        WHEN meter_name = '2F2-63A' THEN 24\n        WHEN meter_name = '2F3-63A' THEN 25\n    END;",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 8,
+          "links": [],
+          "title": "CLS 2 Power Overview in MWh",
+          "vizConfig": {
+            "group": "bargauge",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "continuous-GrYlRd"
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Total Energy Usage (kWh)"
+                    },
+                    "properties": [
+                      {
+                        "id": "unit",
+                        "value": "kwatth"
+                      },
+                      {
+                        "id": "color"
+                      },
+                      {
+                        "id": "thresholds",
+                        "value": {
+                          "mode": "absolute",
+                          "steps": [
+                            {
+                              "color": "blue",
+                              "value": 0
+                            },
+                            {
+                              "color": "green",
+                              "value": 1000
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "options": {
+                "displayMode": "lcd",
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "overflow": "ellipsis",
+                  "placement": "bottom",
+                  "showLegend": false
+                },
+                "maxVizHeight": 300,
+                "minVizHeight": 10,
+                "minVizWidth": 0,
+                "namePlacement": "auto",
+                "orientation": "horizontal",
+                "reduceOptions": {
+                  "calcs": [],
+                  "fields": "",
+                  "limit": 45,
+                  "values": true
+                },
+                "showUnfilled": true,
+                "sizing": "auto",
+                "valueMode": "color"
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      },
+      "panel-9": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "femu71so4md4wf"
+                      },
+                      "group": "mysql",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "dataset": "HulDb",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 9,
+          "links": [],
+          "title": "",
+          "transparent": true,
+          "vizConfig": {
+            "group": "canvas",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "fixed"
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
+                "overrides": []
+              },
+              "options": {
+                "infinitePan": false,
+                "inlineEditing": false,
+                "panZoom": false,
+                "root": {
+                  "background": {
+                    "color": {
+                      "fixed": "transparent"
+                    },
+                    "image": {
+                      "fixed": ""
+                    },
+                    "size": "cover"
+                  },
+                  "border": {
+                    "color": {
+                      "fixed": "dark-green"
+                    }
+                  },
+                  "constraint": {
+                    "horizontal": "left",
+                    "vertical": "top"
+                  },
+                  "elements": [
+                    {
+                      "background": {
+                        "color": {
+                          "fixed": "blue"
+                        },
+                        "image": {
+                          "mode": "fixed"
+                        }
+                      },
+                      "border": {
+                        "color": {
+                          "fixed": "dark-green"
+                        }
+                      },
+                      "config": {
+                        "align": "center",
+                        "color": {
+                          "fixed": "#ffffff"
+                        },
+                        "size": 30,
+                        "text": {
+                          "fixed": "CLS1 MCC",
+                          "mode": "fixed"
+                        },
+                        "valign": "middle"
+                      },
+                      "connections": [],
+                      "constraint": {
+                        "horizontal": "left",
+                        "vertical": "top"
+                      },
+                      "name": "Element 1",
+                      "placement": {
+                        "height": 125.96665954589844,
+                        "left": -169,
+                        "top": -30,
+                        "width": 535
+                      },
+                      "type": "text"
+                    }
+                  ],
+                  "name": "Element 1702715304746",
+                  "oneClickMode": "off",
+                  "placement": {
+                    "height": 100,
+                    "left": 0,
+                    "top": 0,
+                    "width": 100
+                  },
+                  "type": "frame"
+                },
+                "showAdvancedTypes": true,
+                "tooltip": {
+                  "disableForOneClick": false,
+                  "mode": "single"
+                },
+                "zoomToContent": false
+              }
+            },
+            "version": "13.2.2"
+          }
+        }
+      }
+    },
+    "layout": {
+      "kind": "GridLayout",
+      "spec": {
+        "items": [
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-1"
+              },
+              "height": 3,
+              "width": 24,
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-9"
+              },
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 3
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-7"
+              },
+              "height": 11,
+              "width": 24,
+              "x": 0,
+              "y": 5
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-6"
+              },
+              "height": 9,
+              "width": 24,
+              "x": 0,
+              "y": 16
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-5"
+              },
+              "height": 7,
+              "width": 24,
+              "x": 0,
+              "y": 25
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-10"
+              },
+              "height": 8,
+              "width": 12,
+              "x": 0,
+              "y": 32
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-13"
+              },
+              "height": 8,
+              "width": 12,
+              "x": 12,
+              "y": 32
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-12"
+              },
+              "height": 8,
+              "width": 12,
+              "x": 0,
+              "y": 40
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-16"
+              },
+              "height": 8,
+              "width": 12,
+              "x": 12,
+              "y": 40
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-14"
+              },
+              "height": 8,
+              "width": 12,
+              "x": 0,
+              "y": 48
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-15"
+              },
+              "height": 8,
+              "width": 12,
+              "x": 12,
+              "y": 48
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-8"
+              },
+              "height": 12,
+              "width": 24,
+              "x": 0,
+              "y": 56
+            }
+          }
+        ]
+      }
+    },
+    "links": [],
+    "liveNow": false,
+    "preload": false,
+    "tags": [],
+    "timeSettings": {
+      "autoRefresh": "",
+      "autoRefreshIntervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ],
+      "fiscalYearStartMonth": 0,
+      "from": "now-30d",
+      "hideTimepicker": false,
+      "timezone": "browser",
+      "to": "now"
+    },
+    "title": "Meter Wise Daily CLS - OLD MCC",
+    "variables": []
+  }
+}
